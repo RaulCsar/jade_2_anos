@@ -1,0 +1,22 @@
+{
+  "name": "jade-2-anos-convite",
+  "version": "1.0.0",
+  "description": "Convite SPA interativo para o aniversário de 2 anos da Jade",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "build": "echo 'No build step required for static files'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "spa",
+    "invitation",
+    "vercel",
+    "static"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}

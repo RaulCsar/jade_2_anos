@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jade Faz 2! - Convite Moranguinho Vintage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-pattern"></div>
+
+    <header>
+        <nav>
+            <a href="#hero" class="nav-link">Início</a>
+            <a href="#detalhes" class="nav-link">Detalhes</a>
+            <a href="#historia" class="nav-link">História</a>
+            <a href="#presentes" class="nav-link">Presentes</a>
+            <a href="#rsvp" class="nav-link">RSVP</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="section-container">
+            <div class="scrapbook-card hero-card">
+                <div class="tape top-left"></div>
+                <div class="tape top-right"></div>
+                <h1 class="title">Jade</h1>
+                <p class="subtitle">2 aninhos!</p>
+                <div class="illustration-placeholder">
+                    <!-- Placeholder for Strawberry illustration -->
+                    <img src="https://via.placeholder.com/200x200?text=Moranguinho+Vintage" alt="Moranguinho Vintage" class="hero-img">
+                </div>
+                <p class="description">Venha celebrar um dia doce e especial!</p>
+                <a href="#rsvp" class="btn btn-primary wobble">Confirmar Presença</a>
+            </div>
+        </section>
+
+        <section id="detalhes" class="section-container">
+            <h2 class="section-title">Onde & Quando</h2>
+            <div class="details-grid">
+                <div class="scrapbook-card detail-card serrated">
+                    <div class="tape top-center"></div>
+                    <h3>Data e Hora</h3>
+                    <p>Sábado, 23 de Maio</p>
+                    <p>Às 16:00h</p>
+                </div>
+                <div class="scrapbook-card detail-card serrated">
+                    <div class="tape top-center"></div>
+                    <h3>Local</h3>
+                    <p>Rua Doce Morango, 123</p>
+                    <p>Bairro Jardim Encantado</p>
+                </div>
+                <div class="scrapbook-card detail-card serrated">
+                    <div class="tape top-center"></div>
+                    <h3>Traje</h3>
+                    <p>Confortável & Festivo</p>
+                    <p>(Opcional: Toque de Vermelho)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="historia" class="section-container">
+            <h2 class="section-title">Nossa História</h2>
+            <div class="gallery">
+                <div class="scrapbook-card photo-card">
+                    <div class="tape top-left"></div>
+                    <img src="https://via.placeholder.com/150x150?text=Foto+1" alt="Jade 1">
+                    <p class="caption">Primeiros Passos</p>
+                </div>
+                <div class="scrapbook-card photo-card">
+                    <div class="tape top-right"></div>
+                    <img src="https://via.placeholder.com/150x150?text=Foto+2" alt="Jade 2">
+                    <p class="caption">Muitos Sorrisos</p>
+                </div>
+                <div class="scrapbook-card photo-card">
+                    <div class="tape top-left"></div>
+                    <img src="https://via.placeholder.com/150x150?text=Foto+3" alt="Jade 3">
+                    <p class="caption">Amor da Família</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="presentes" class="section-container">
+            <h2 class="section-title">Lista de Presentes</h2>
+            <div class="gifts-container">
+                <div class="scrapbook-card gift-card">
+                    <div class="tape top-center"></div>
+                    <p>Sua presença é o maior presente! Mas se quiser nos mimar, aqui estão algumas sugestões:</p>
+                    <ul>
+                        <li>Roupas (Tamanho 2-3)</li>
+                        <li>Brinquedos Pedagógicos</li>
+                        <li>Livros Infantis</li>
+                    </ul>
+                </div>
+                <div class="scrapbook-card gift-card highlight-card">
+                    <div class="tape top-center"></div>
+                    <h3>Opção Pix</h3>
+                    <p>Chave: 123.456.789-00</p>
+                    <button class="btn btn-secondary wobble" onclick="copyPix()">Copiar Chave Pix</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="rsvp" class="section-container">
+            <h2 class="section-title">Confirme sua Presença</h2>
+            <div class="scrapbook-card rsvp-card">
+                <form id="rsvp-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" required placeholder="Seu nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Qtd. Convidados (incluindo você)</label>
+                        <input type="number" id="guests" name="guests" min="1" required value="1">
+                    </div>
+                    <div class="form-group">
+                        <label for="diet">Restrições Alimentares?</label>
+                        <textarea id="diet" name="diet" placeholder="Ex: Alérgico a glúten..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block wobble">Enviar Confirmação</button>
+                </form>
+                <div id="rsvp-message" class="hidden">
+                    <p>Obrigado! Sua confirmação foi enviada.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Com amor, Família da Jade ❤️</p>
+        <p>Dúvidas? (11) 99999-9999</p>
+        <p>&copy; 2026 - Jade 2 Aninhos</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
